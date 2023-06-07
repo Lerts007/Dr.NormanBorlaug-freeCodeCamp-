@@ -1,4 +1,111 @@
+/* Подключение шрифта Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400&display=swap");
+
 :root {
-  --text-color: #f3f3f3;
-  --submit-color: #37af65;
+  --background-color: #eee;
+  --img-div-color: #fff;
+  --font-weight-bold: 800;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+}
+
+/* header */
+#header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  height: 150px;
+}
+
+#title {
+  font-size: 40px;
+  font-weight: var(--font-weight-bold);
+  margin-top: 26px;
+}
+
+#header p {
+  margin: 16px 0;
+}
+
+/* img-div */
+#img-div {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--img-div-color);
+}
+
+#image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#img-caption {
+  margin: 15px 0 5px;
+  text-align: center;
+}
+
+/* tribute-info */
+#tribute-info {
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+#tribute-info h2 {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+}
+
+#tribute-info ul {
+  margin: 0 auto 50px;
+}
+
+#tribute-info ul li {
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+
+#tribute-info p {
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+/* footer */
+#footer {
+  padding: 20px 0;
+}
+#footer p {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+a {
+  color: #477ca7;
 }
